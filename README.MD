@@ -5,9 +5,9 @@ target is to have a PCB is less than 10x10cm so it's very cheap.
 WARING - THIS IS WORK IN PROGRESS - NOT TESTED
 
 
-The Advantege of this interfaz over the original are:
+The Advantage of this interfaz over the original are:
 
-- 4 Banks of ROM, so you can swap between G+Dos and Unidos, selectable by dip-switches
+- 4 Banks of ROM, so you can swap between original ROM and Quickdos, selectable by dip-switches
 
 - Included Fixed for +2A/+3, so can be used in any ZX Spectrum, selection by jumpers
 
