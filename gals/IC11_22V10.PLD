@@ -17,7 +17,7 @@ PIN  3   = A1                        ; /*                                 */
 PIN  4   = A2                        ; /*                                 */ 
 PIN  5   = IOREQ                     ; /*                                 */ 
 PIN  6   = RD                        ; /*                                 */ 
-PIN  7   = A7                    ; /*                                 */ 
+PIN  7   = A7                        ; /*                                 */ 
 PIN  8   = J_Left                    ; /*                                 */ 
 PIN  9   = J_Right                   ; /*                                 */ 
 PIN  10  = J_Up                      ; /*                                 */ 
@@ -26,7 +26,7 @@ PIN  13  = J_Fire                    ; /*                                 */
 PIN  15   = JOY_EN                   ; /*                                 */
 
 /* *************** OUTPUT PINS *********************/
-PIN  14   = U12A_5                     ; /*                                 */ 	   		
+PIN  14   = U12A_5                    ; /*                                 */ 	   		
 PIN  16   = D7                        ; /*                                 */ 
 PIN  17   = D6                        ; /*                                 */ 
 PIN  18   = D5                        ; /*                                 */ 
