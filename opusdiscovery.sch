@@ -657,10 +657,6 @@ $EndComp
 Wire Wire Line
 	4550 6400 4550 6450
 Wire Wire Line
-	3600 5600 4150 5600
-Text Label 3800 5600 0    50   ~ 0
-A12
-Wire Wire Line
 	3600 4400 4150 4400
 Text Label 3800 4400 0    50   ~ 0
 A0
@@ -705,10 +701,6 @@ Wire Wire Line
 Text Label 3800 5400 0    50   ~ 0
 A10
 Wire Wire Line
-	3600 5500 4150 5500
-Text Label 3800 5500 0    50   ~ 0
-A11
-Wire Wire Line
 	3600 6100 4150 6100
 Text Label 3775 6100 0    50   ~ 0
 WR
@@ -752,10 +744,6 @@ Entry Wire Line
 	3500 5400 3600 5300
 Entry Wire Line
 	3500 5500 3600 5400
-Entry Wire Line
-	3500 5600 3600 5500
-Entry Wire Line
-	3500 5700 3600 5600
 Connection ~ 3500 4550
 Wire Wire Line
 	3600 6000 4150 6000
@@ -837,7 +825,7 @@ U 1 1 5B4383AF
 P 7975 3200
 F 0 "R7" V 7768 3200 50  0000 C CNN
 F 1 "2K2" V 7859 3200 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7905 3200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7905 3200 50  0001 C CNN
 F 3 "~" H 7975 3200 50  0001 C CNN
 	1    7975 3200
 	0    1    1    0   
@@ -848,7 +836,7 @@ U 1 1 5B438442
 P 9175 3200
 F 0 "R8" V 8968 3200 50  0000 C CNN
 F 1 "2K2" V 9059 3200 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9105 3200 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9105 3200 50  0001 C CNN
 F 3 "~" H 9175 3200 50  0001 C CNN
 	1    9175 3200
 	0    1    1    0   
@@ -1108,7 +1096,7 @@ U 1 1 5B81403C
 P 7850 1500
 F 0 "R1" H 7780 1454 50  0000 R CNN
 F 1 "470" H 7780 1545 50  0000 R CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7780 1500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7780 1500 50  0001 C CNN
 F 3 "~" H 7850 1500 50  0001 C CNN
 	1    7850 1500
 	-1   0    0    1   
@@ -1132,7 +1120,7 @@ U 1 1 5B85A109
 P 8000 1500
 F 0 "R2" H 7930 1454 50  0000 R CNN
 F 1 "470" H 7930 1545 50  0000 R CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7930 1500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7930 1500 50  0001 C CNN
 F 3 "~" H 8000 1500 50  0001 C CNN
 	1    8000 1500
 	-1   0    0    1   
@@ -1143,7 +1131,7 @@ U 1 1 5B85A15B
 P 8150 1500
 F 0 "R3" H 8080 1454 50  0000 R CNN
 F 1 "470" H 8080 1545 50  0000 R CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8080 1500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8080 1500 50  0001 C CNN
 F 3 "~" H 8150 1500 50  0001 C CNN
 	1    8150 1500
 	-1   0    0    1   
@@ -1156,7 +1144,7 @@ U 1 1 5B9D877D
 P 8300 1500
 F 0 "R4" H 8230 1454 50  0000 R CNN
 F 1 "470" H 8230 1545 50  0000 R CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8230 1500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8230 1500 50  0001 C CNN
 F 3 "~" H 8300 1500 50  0001 C CNN
 	1    8300 1500
 	-1   0    0    1   
@@ -1347,12 +1335,12 @@ F 3 "" H 2150 4875 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2150 6450 2150 6750
-Text GLabel 6150 7150 2    50   Input ~ 0
+Text GLabel 5825 7175 2    50   Input ~ 0
 FDC_CS
-Text GLabel 6150 7800 2    50   Input ~ 0
+Text GLabel 5825 7825 2    50   Input ~ 0
 ROM_CS
-Text GLabel 6150 7050 2    50   Input ~ 0
-RAM_CS
+Text GLabel 5825 7075 2    50   Input ~ 0
+RAM_CS1
 Connection ~ 6250 10750
 Connection ~ 6250 11050
 Connection ~ 850  4550
@@ -1472,7 +1460,7 @@ U 1 1 5BA7DCB5
 P 1500 10400
 F 0 "R10" H 1430 10354 50  0000 R CNN
 F 1 "680" H 1430 10445 50  0000 R CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1430 10400 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1430 10400 50  0001 C CNN
 F 3 "~" H 1500 10400 50  0001 C CNN
 	1    1500 10400
 	-1   0    0    1   
@@ -1497,35 +1485,35 @@ Wire Wire Line
 $Comp
 L Diode:1N4148 D2
 U 1 1 5BBAC501
-P 1300 9375
-F 0 "D2" H 1300 9159 50  0000 C CNN
-F 1 "1N4148" H 1300 9250 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1300 9200 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 1300 9375 50  0001 C CNN
-	1    1300 9375
-	-1   0    0    1   
+P 5075 9250
+F 0 "D2" H 5075 9034 50  0000 C CNN
+F 1 "1N4148" H 5075 9125 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5075 9075 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 5075 9250 50  0001 C CNN
+	1    5075 9250
+	1    0    0    1   
 $EndComp
 $Comp
 L Diode:1N4148 D3
 U 1 1 5BBAC68C
-P 1300 9000
-F 0 "D3" H 1300 8784 50  0000 C CNN
-F 1 "1N4148" H 1300 8875 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1300 8825 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 1300 9000 50  0001 C CNN
-	1    1300 9000
-	-1   0    0    1   
+P 5075 8875
+F 0 "D3" H 5075 8659 50  0000 C CNN
+F 1 "1N4148" H 5075 8750 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5075 8700 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 5075 8875 50  0001 C CNN
+	1    5075 8875
+	1    0    0    1   
 $EndComp
 $Comp
 L Diode:1N4148 D4
 U 1 1 5BBAC9D8
-P 1300 8675
-F 0 "D4" H 1300 8459 50  0000 C CNN
-F 1 "1N4148" H 1300 8550 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1300 8500 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 1300 8675 50  0001 C CNN
-	1    1300 8675
-	-1   0    0    1   
+P 5075 8550
+F 0 "D4" H 5075 8334 50  0000 C CNN
+F 1 "1N4148" H 5075 8425 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5075 8375 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 5075 8550 50  0001 C CNN
+	1    5075 8550
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR014
@@ -1539,41 +1527,41 @@ F 3 "" H 4550 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1150 9000 1100 9000
+	5225 8875 5275 8875
 Wire Wire Line
-	1150 8675 1100 8675
+	5225 8550 5275 8550
 Wire Wire Line
-	1100 8675 1100 9000
+	5275 8550 5275 8875
 Wire Wire Line
-	1150 9375 1100 9375
+	5225 9250 5275 9250
 Wire Wire Line
-	1100 9000 1100 9075
+	5275 8875 5275 8950
 Wire Wire Line
-	1100 9075 1000 9075
-Connection ~ 1100 9000
+	5275 8950 5375 8950
+Connection ~ 5275 8875
 $Comp
 L Connector_Generic:Conn_01x03 JP2
 U 1 1 5BCE3484
-P 800 9175
-F 0 "JP2" H 800 8825 50  0000 C CNN
-F 1 "Conn_01x03" H 800 8925 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 800 9175 50  0001 C CNN
-F 3 "~" H 800 9175 50  0001 C CNN
-	1    800  9175
-	-1   0    0    1   
+P 5575 9050
+F 0 "JP2" H 5575 8700 50  0000 C CNN
+F 1 "Conn_01x03" H 5575 8800 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5575 9050 50  0001 C CNN
+F 3 "~" H 5575 9050 50  0001 C CNN
+	1    5575 9050
+	1    0    0    1   
 $EndComp
-Text GLabel 1600 9000 2    50   Input ~ 0
+Text GLabel 4775 8875 0    50   Input ~ 0
 ZX_ROMOE2
-Text GLabel 1600 8675 2    50   Input ~ 0
+Text GLabel 4775 8550 0    50   Input ~ 0
 ZX_ROMOE1
-Text GLabel 1600 9375 2    50   Input ~ 0
+Text GLabel 4775 9250 0    50   Input ~ 0
 ZX_ROMOE48
 Wire Wire Line
-	1450 8675 1600 8675
+	4925 8550 4775 8550
 Wire Wire Line
-	1450 9000 1600 9000
+	4925 8875 4775 8875
 Wire Wire Line
-	1450 9375 1600 9375
+	4925 9250 4775 9250
 Text GLabel 6825 775  0    50   Input ~ 0
 NMI
 $Comp
@@ -1832,7 +1820,7 @@ U 1 1 5B546E94
 P 4525 800
 F 0 "R12" H 4455 754 50  0000 R CNN
 F 1 "10K" H 4455 845 50  0000 R CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4455 800 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4455 800 50  0001 C CNN
 F 3 "~" H 4525 800 50  0001 C CNN
 	1    4525 800 
 	-1   0    0    1   
@@ -1845,7 +1833,7 @@ U 1 1 5B5847BB
 P 4225 800
 F 0 "R11" H 4155 754 50  0000 R CNN
 F 1 "10K" H 4155 845 50  0000 R CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4155 800 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4155 800 50  0001 C CNN
 F 3 "~" H 4225 800 50  0001 C CNN
 	1    4225 800 
 	-1   0    0    1   
@@ -2266,7 +2254,7 @@ F 3 "" H 4550 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3775 5800 4150 5800
+	3775 5800 4100 5800
 $Comp
 L power:+5V #PWR032
 U 1 1 5B3C3705
@@ -2718,23 +2706,23 @@ Wire Wire Line
 $Comp
 L 74xx:74LS139 U2
 U 1 1 5D1A2BFF
-P 4350 7700
-F 0 "U2" H 4350 8067 50  0000 C CNN
-F 1 "74LS139" H 4350 7976 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 4350 7700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS139" H 4350 7700 50  0001 C CNN
-	1    4350 7700
+P 4025 7725
+F 0 "U2" H 4025 8092 50  0000 C CNN
+F 1 "74LS139" H 4025 8001 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 4025 7725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS139" H 4025 7725 50  0001 C CNN
+	1    4025 7725
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS139 U2
 U 2 1 5D1A2D41
-P 5550 7150
-F 0 "U2" H 5550 7517 50  0000 C CNN
-F 1 "74LS139" H 5550 7426 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 5550 7150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS139" H 5550 7150 50  0001 C CNN
-	2    5550 7150
+P 5225 7175
+F 0 "U2" H 5225 7542 50  0000 C CNN
+F 1 "74LS139" H 5225 7451 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 5225 7175 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS139" H 5225 7175 50  0001 C CNN
+	2    5225 7175
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2755,37 +2743,32 @@ Connection ~ 11100 11050
 Wire Wire Line
 	11100 11050 11500 11050
 Wire Wire Line
-	5050 7050 4800 7050
-Text Label 4825 7050 0    50   ~ 0
+	4725 7075 4475 7075
+Text Label 4500 7075 0    50   ~ 0
 A12
 Wire Wire Line
-	6050 7150 6150 7150
+	5725 7175 5825 7175
 Wire Wire Line
-	6050 7050 6150 7050
-NoConn ~ 6050 7350
-NoConn ~ 4850 7600
-NoConn ~ 4850 7700
+	5725 7075 5825 7075
+NoConn ~ 4525 7625
+NoConn ~ 4525 7725
 Wire Wire Line
-	4800 7150 5050 7150
-Text Label 4825 7150 0    50   ~ 0
+	4475 7175 4725 7175
+Text Label 4500 7175 0    50   ~ 0
 A11
-Text Label 3500 7700 0    50   ~ 0
+Text Label 3175 7725 0    50   ~ 0
 A13
 $Comp
 L 74xx:74LS73 U1
 U 1 1 5C90D242
-P 3500 8225
-F 0 "U1" H 3500 8592 50  0000 C CNN
-F 1 "74LS73" H 3500 8501 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 3500 8225 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS73" H 3500 8225 50  0001 C CNN
-	1    3500 8225
+P 3175 8250
+F 0 "U1" H 3175 8617 50  0000 C CNN
+F 1 "74LS73" H 3175 8526 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 3175 8250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS73" H 3175 8250 50  0001 C CNN
+	1    3175 8250
 	1    0    0    -1  
 $EndComp
-Text GLabel 1600 9175 2    50   Input ~ 0
-ZX_I_ROMOE
-Text GLabel 6000 8125 2    50   Input ~ 0
-ZX_I_ROMOE
 $Comp
 L ALEA:GAL22V10 IC4
 U 1 1 5CA9309B
@@ -2817,18 +2800,18 @@ Text GLabel 2800 5300 2    50   Input ~ 0
 CX_K
 Text GLabel 2800 5400 2    50   Input ~ 0
 CX_CK
-Text GLabel 2975 8125 0    50   Input ~ 0
+Text GLabel 2650 8150 0    50   Input ~ 0
 CX_J
-Text GLabel 2975 8325 0    50   Input ~ 0
+Text GLabel 2650 8350 0    50   Input ~ 0
 CX_K
-Text GLabel 3025 8225 0    50   Input ~ 0
+Text GLabel 2700 8250 0    50   Input ~ 0
 CX_CK
 Wire Wire Line
-	2975 8125 3200 8125
+	2650 8150 2875 8150
 Wire Wire Line
-	3025 8225 3200 8225
+	2700 8250 2875 8250
 Wire Wire Line
-	2975 8325 3200 8325
+	2650 8350 2875 8350
 Wire Wire Line
 	2650 5200 2800 5200
 Wire Wire Line
@@ -2884,39 +2867,35 @@ CX_U6A_A1
 Wire Wire Line
 	2650 5500 2800 5500
 NoConn ~ 2650 5600
-Text GLabel 3225 7600 0    50   Input ~ 0
+Text GLabel 2900 7625 0    50   Input ~ 0
 CX_U6A_A1
 Wire Wire Line
-	3225 7600 3850 7600
-Text Label 2875 8600 0    50   ~ 0
+	2900 7625 3525 7625
+Text Label 2550 8625 0    50   ~ 0
 RESET
 Wire Wire Line
-	3500 8525 3500 8600
+	3175 8550 3175 8625
 Wire Wire Line
-	3500 8600 2775 8600
+	3175 8625 2450 8625
 Wire Bus Line
 	5950 550  13600 550 
 Wire Bus Line
 	3500 550  5950 550 
 Connection ~ 5950 550 
 Wire Wire Line
-	1000 9175 1600 9175
+	3525 7925 3525 8350
 Wire Wire Line
-	3850 7900 3850 8325
+	3525 8350 3475 8350
 Wire Wire Line
-	3850 8325 3800 8325
+	4725 7375 4675 7375
 Wire Wire Line
-	5050 7350 5000 7350
+	3150 7725 3525 7725
 Wire Wire Line
-	3800 8125 6000 8125
+	4525 7825 5825 7825
 Wire Wire Line
-	3475 7700 3850 7700
+	4675 7925 4525 7925
 Wire Wire Line
-	4850 7800 6150 7800
-Wire Wire Line
-	5000 7900 4850 7900
-Wire Wire Line
-	5000 7350 5000 7900
+	4675 7375 4675 7925
 Wire Wire Line
 	4525 650  4525 625 
 Wire Wire Line
@@ -2928,14 +2907,14 @@ Wire Wire Line
 Connection ~ 4225 625 
 Wire Wire Line
 	4225 625  4025 625 
-Text GLabel 6150 7250 2    50   Input ~ 0
+Text GLabel 5825 7275 2    50   Input ~ 0
 PIA_CS
 Wire Wire Line
-	6050 7250 6150 7250
+	5725 7275 5825 7275
 Wire Wire Line
-	1000 9275 1100 9275
+	5375 9150 5275 9150
 Wire Wire Line
-	1100 9275 1100 9375
+	5275 9150 5275 9250
 $Comp
 L Interface:6821 U3
 U 1 1 5F6EB815
@@ -2950,12 +2929,12 @@ $EndComp
 $Comp
 L power:+5V #PWR016
 U 1 1 5F6EBC8E
-P 7650 4350
-F 0 "#PWR016" H 7650 4200 50  0001 C CNN
-F 1 "+5V" H 7665 4523 50  0000 C CNN
-F 2 "" H 7650 4350 50  0001 C CNN
-F 3 "" H 7650 4350 50  0001 C CNN
-	1    7650 4350
+P 7950 4600
+F 0 "#PWR016" H 7950 4450 50  0001 C CNN
+F 1 "+5V" H 7965 4773 50  0000 C CNN
+F 2 "" H 7950 4600 50  0001 C CNN
+F 3 "" H 7950 4600 50  0001 C CNN
+	1    7950 4600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3125,6 +3104,96 @@ Wire Wire Line
 Connection ~ 9750 11050
 Wire Wire Line
 	9750 11050 10650 11050
+$Comp
+L Diode:1N4148 D1
+U 1 1 5C89AB4A
+P 7675 8700
+F 0 "D1" H 7675 8484 50  0000 C CNN
+F 1 "1N4148" H 7675 8575 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7675 8525 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 7675 8700 50  0001 C CNN
+	1    7675 8700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D6
+U 1 1 5C89C542
+P 7675 9075
+F 0 "D6" H 7675 8859 50  0000 C CNN
+F 1 "1N4148" H 7675 8950 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7675 8900 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 7675 9075 50  0001 C CNN
+	1    7675 9075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5C89E390
+P 7950 8375
+F 0 "R5" H 7880 8329 50  0000 R CNN
+F 1 "10K" H 7880 8420 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7880 8375 50  0001 C CNN
+F 3 "~" H 7950 8375 50  0001 C CNN
+	1    7950 8375
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR020
+U 1 1 5C89E396
+P 7950 8175
+F 0 "#PWR020" H 7950 8025 50  0001 C CNN
+F 1 "+5V" H 7965 8348 50  0000 C CNN
+F 2 "" H 7950 8175 50  0001 C CNN
+F 3 "" H 7950 8175 50  0001 C CNN
+	1    7950 8175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 8175 7950 8225
+Text GLabel 5825 7375 2    50   Input ~ 0
+RAM_CS2
+Wire Wire Line
+	5725 7375 5825 7375
+Text GLabel 7375 9075 0    50   Input ~ 0
+RAM_CS2
+Text GLabel 7375 8700 0    50   Input ~ 0
+RAM_CS1
+Wire Wire Line
+	7375 8700 7525 8700
+Wire Wire Line
+	7375 9075 7525 9075
+Wire Wire Line
+	7950 8700 7825 8700
+Wire Wire Line
+	7950 8525 7950 8700
+Wire Wire Line
+	7950 8700 7950 9075
+Wire Wire Line
+	7950 9075 7825 9075
+Connection ~ 7950 8700
+Text GLabel 8150 8700 2    50   Input ~ 0
+RAM_CS
+Wire Wire Line
+	7950 8700 8150 8700
+Wire Wire Line
+	4100 5800 4100 5600
+Connection ~ 4100 5800
+Wire Wire Line
+	4100 5800 4150 5800
+Wire Wire Line
+	4100 5600 4150 5600
+Text GLabel 4000 5500 0    50   Input ~ 0
+RAM_CS1
+Wire Wire Line
+	4000 5500 4150 5500
+Wire Wire Line
+	5375 9050 4025 9050
+Wire Wire Line
+	3475 8150 4025 8150
+Wire Wire Line
+	4025 9050 4025 8150
+Wire Wire Line
+	7950 4600 7950 4675
 Wire Bus Line
 	13600 550  13600 2500
 Wire Bus Line

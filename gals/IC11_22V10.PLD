@@ -1,4 +1,4 @@
-/* Kempston Joystick and Motor On signal for VDR's Opus Discovery Clone */
+/* Kempston Joystick for VDR's Opus Discovery Clone */
 /* aditional code for address decoder */
 Name     Kempston;
 PartNo   00 ;

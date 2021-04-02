@@ -5,13 +5,13 @@
   )
   (autoroute_settings
     (fanout off)
-    (autoroute on)
+    (eu.mihosoft.freerouting.autoroute on)
     (postroute on)
     (vias on)
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2590)
+    (start_pass_no 431)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -71,17 +71,17 @@
   (class "kicad_default"
     /RESET "Net-(D2-Pad2)" /A11 /A9 /A4 /A6 /A7 /A10
     /A8 /M1 /WR /A3 /A2 /A1 /A0 /A12
-    /A14 /MREQ NMI /A13 /A15 "FDC_CS" "ZX_ROMOE1" "ZX_ROMOE2"
-    "ZX_ROMOE48" "ROM_A14" "ROM_A13" "J1-Up" "J2-Down" "J3-Left" "J4-Right" "J6-Fire"
-    /A5 /RD /IOREQ /D4 /D3 /D5 /D6 /D2
-    /D1 /D0 /D7 /DS0 /DS1 "RAM_CS" "ROM_CS" "Net-(D5-Pad2)"
-    /INDEX "/MOTOR_ON" /DIR /STEP /HEAD "/TRACK_0" "Net-(C13-Pad2)" "Net-(C13-Pad1)"
-    "Net-(C14-Pad1)" "Net-(C14-Pad2)" "Net-(D3-Pad2)" "Net-(IC1-Pad25)" "Net-(IC1-Pad22)" "Net-(IC1-Pad21)" "Net-(IC1-Pad20)" "Net-(IC1-Pad19)"
-    "Net-(IC1-Pad17)" "Net-(IC1-Pad16)" "Net-(IC5-Pad2)" "Net-(IC5-Pad3)" "Net-(IC5-Pad12)" "Net-(IC9-Pad4)" "Net-(J2-Pad10)" "Net-(J2-Pad14)"
-    "JOY_EN" "Net-(IC1-Pad27)" DDEN "CX_J" "CX_K" "CX_CK" "CX_U6A_A1" /RFSH
-    "S_U12A" "Net-(J3-Pad1)" "Net-(J3-Pad3)" "Net-(J3-Pad5)" "Net-(J3-Pad7)" "Net-(J3-Pad9)" "Net-(J3-Pad11)" "Net-(J3-Pad13)"
-    "Net-(J3-Pad15)" "Net-(J3-Pad17)" "Net-(J3-Pad19)" "Net-(J3-Pad21)" "ZX_I_ROMOE" "Net-(JP5-Pad3)" "Net-(JP5-Pad2)" "Net-(U1-Pad8)"
-    "PIA_CS" "Net-(U2-Pad15)" "Net-(U10-Pad1)" "Net-(U10-Pad4)" "Net-(U10-Pad9)"
+    /A14 /MREQ NMI /A13 /A15 "ZX_ROMOE1" "ZX_ROMOE2" "ZX_ROMOE48"
+    "ROM_A14" "ROM_A13" "J1-Up" "J2-Down" "J3-Left" "J4-Right" "J6-Fire" /A5
+    /RD /IOREQ /D4 /D3 /D5 /D6 /D2 /D1
+    /D0 /D7 /DS0 /DS1 "ROM_CS" "Net-(D5-Pad2)" /INDEX "/MOTOR_ON"
+    /DIR /STEP /HEAD "/TRACK_0" "Net-(C13-Pad2)" "Net-(C13-Pad1)" "Net-(C14-Pad1)" "Net-(C14-Pad2)"
+    "Net-(D3-Pad2)" "Net-(IC1-Pad25)" "Net-(IC1-Pad22)" "Net-(IC1-Pad21)" "Net-(IC1-Pad20)" "Net-(IC1-Pad19)" "Net-(IC1-Pad17)" "Net-(IC1-Pad16)"
+    "Net-(IC5-Pad2)" "Net-(IC5-Pad3)" "Net-(IC5-Pad12)" "Net-(IC9-Pad4)" "Net-(J2-Pad10)" "Net-(J2-Pad14)" "JOY_EN" "Net-(IC1-Pad27)"
+    DDEN "CX_J" "CX_K" "CX_CK" "CX_U6A_A1" /RFSH "S_U12A" "Net-(J3-Pad1)"
+    "Net-(J3-Pad3)" "Net-(J3-Pad5)" "Net-(J3-Pad7)" "Net-(J3-Pad9)" "Net-(J3-Pad11)" "Net-(J3-Pad13)" "Net-(J3-Pad15)" "Net-(J3-Pad17)"
+    "Net-(J3-Pad19)" "Net-(J3-Pad21)" "Net-(JP5-Pad3)" "Net-(JP5-Pad2)" "Net-(U1-Pad8)" "PIA_CS" "Net-(U2-Pad15)" "Net-(U10-Pad1)"
+    "Net-(U10-Pad4)" "Net-(U10-Pad9)" "RAM_CS1" "Net-(JP2-Pad2)" "RAM_CS" "RAM_CS2" "FDC_CS"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
