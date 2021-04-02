@@ -61,5 +61,5 @@ D0.OE = !Kempston;
 /* 
 /* **** ADDRESS DECODER **** */
 
-U12A_5 = !A0 # !A1 # !A2 # !A5 # !A7;
+U12A_5 = !(A0 # A1 # A2 # A5 # A7);
 U12A_5.OE = 'b'1 ;
