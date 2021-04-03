@@ -10,62 +10,36 @@ Location  ;
 Device   g22v10 ;
 
 /* *************** INPUT PINS *********************/
-PIN  1   = A14                        ; /*                                 */ 
-PIN  2   = A15                        ; /*                                 */ 
-PIN  3   = A13                        ; /*                                 */ 
-PIN  4   = MREQ                       ; /*                                 */ 
-PIN  5   = RFSH                       ; /*                                 */ 
-PIN  6   = A12                        ; /*                                 */ 
-PIN  7   = A11                        ; /*                                 */ 
-PIN  8   = A6                         ; /*                                 */ 
-PIN  9   = A5                         ; /*                                 */ 
-PIN  10  = A4                         ; /*                                 */ 
-PIN  11  = A3                         ; /*                                 */ 
-PIN  13  = A9                    ; /*                                 */ 
-PIN  14   = A10                     ; /*                                 */ 	   		
-PIN  15   = U12A_5                     ; /*                                 */ 	   		
+PIN  1   = A14                     ; /*                                 */ 
+PIN  2   = A15                     ; /*                                 */ 
+PIN  3   = A13                     ; /*                                 */ 
+PIN  4   = MREQ                    ; /*                                 */ 
+PIN  5   = RFSH                    ; /*                                 */ 
+PIN  6   = A12                     ; /*                                 */ 
+PIN  7   = A11                     ; /*                                 */ 
+PIN  8   = A6                      ; /*                                 */ 
+PIN  9   = A5                      ; /*                                 */ 
+PIN  10  = A4                      ; /*                                 */ 
+PIN  11  = A3                      ; /*                                 */ 
+PIN  13  = A9                      ; /*                                 */ 
+PIN  14   = A10                    ; /*                                 */ 	   		
+PIN  15   = U12A_5                 ; /*                                 */ 	   		
 PIN  16   = A7                     ; /*                                 */ 	   		
 PIN  17   = A8                     ; /*                                 */ 	   		
 PIN  18   = M1                     ; /*                                 */ 	   		
 
 
 /* *************** OUTPUT PINS *********************/
-PIN  20   = CX_U12B_6                        ; /*                                 */ 
-PIN  21   = CX_CK                        ; /*                                 */ 
-PIN  22   = CX_K                        ; /*                                 */ 
-PIN  23   = CX_J                        ; /*                                 */ 
-
-/* K se activa en la direcion 0x1748 */
-/* J se activa en las direciones 0x1708, 0x0048 y 0x0008 */
-/* probablemente deberiamos meter M1 tambien en CX_CK */
-
-CX_U12B_6 = !A15 # !A14 # RFSH # !MREQ ; /* External ROM OE Ignored. */
-
-/*
-C1 = !A15 & !A14 & !A13 & !A11 & !A4 & A3 & U12A_5 & RFSH & !MREQ & !M1 ;
-C2 =  A8 &  A9 &  A10 &  A11 ;
-C3 = !A8 & !A9 & !A10 & !A11 ;           
-CX_K = C1 &     C2 &  A6 ;
-CK_J = C1 & ( ( C2 & !A6) # C3) ;
-CX_CK = !MREQ & RFSH;
-*/
-
-U9B_6 = (A8 & !A9) # (!A8 & A9);
-U9C_8 = (A9 & !A10) # (!A9 & A10);
-U9D_11 = (A10 & !A12) # (!A10 & A12);
-
-U8A_1 = !(U9B_6 # U9C_8 # U9D_11);
-
-U8B_4 = U8A_1 & !A11 & A3 & !A13 & U12A_5 & CX_U12B_6 & !A4 & !M1 ;
-
-CX_J = A6 & A8 & U8B_4;
-
-CX_K = !(A6 & A8) & U8B_4;
-
-CX_CK = !MREQ & RFSH;
+PIN  20   = CX_U12B_6              ; /*                                 */ 
+PIN  21   = CX_CK                  ; /*                                 */ 
+PIN  22   = CX_K                   ; /*                                 */ 
+PIN  23   = CX_J                   ; /*  23                               */ 
 
 /*  */
-CX_J.OE = 'b'1;
-CX_K.OE = 'b'1;
-CX_CK.OE = 'b'1;
-CX_U12B_6.OE = 'b'1;
+CX_U12B_6 = !A15 # !A14 # RFSH # !MREQ ; /* External ROM OE Ignored. */
+C1 = !A15 & !A14 & !A13 & !A11 & !A4 & A3 & U12A_5 & !MREQ & RFSH & !M1 ;
+C2 =  A8 &  A9 &  A10 &  A12 ;
+C3 = !A8 & !A9 & !A10 & !A12 ;
+CX_K =  C1 & C2 &  A6 ;
+CX_J = (C1 & C2 & !A6) # (C1 & C3) ;
+CX_CK = !MREQ & RFSH;

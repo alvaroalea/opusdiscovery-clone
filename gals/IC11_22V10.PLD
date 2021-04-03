@@ -1,5 +1,4 @@
-/* Kempston Joystick for VDR's Opus Discovery Clone */
-/* aditional code for address decoder */
+/* Logic Decoder for VDR's Opus Discovery Clone */
 Name     Kempston;
 PartNo   00 ;
 Date     09/03/2019 ;
@@ -17,16 +16,15 @@ PIN  3   = A1                        ; /*                                 */
 PIN  4   = A2                        ; /*                                 */ 
 PIN  5   = IOREQ                     ; /*                                 */ 
 PIN  6   = RD                        ; /*                                 */ 
-PIN  7   = A7                        ; /*                                 */ 
+PIN  7   = A7                    	   ; /*                                 */ 
 PIN  8   = J_Left                    ; /*                                 */ 
 PIN  9   = J_Right                   ; /*                                 */ 
 PIN  10  = J_Up                      ; /*                                 */ 
 PIN  11  = J_Down                    ; /*                                 */ 
 PIN  13  = J_Fire                    ; /*                                 */ 
-PIN  15   = JOY_EN                   ; /*                                 */
-
+PIN  15   = JOY_EN ;
 /* *************** OUTPUT PINS *********************/
-PIN  14   = U12A_5                    ; /*                                 */ 	   		
+PIN  14   = U12A_5                    ;
 PIN  16   = D7                        ; /*                                 */ 
 PIN  17   = D6                        ; /*                                 */ 
 PIN  18   = D5                        ; /*                                 */ 
@@ -35,10 +33,7 @@ PIN  20   = D3                        ; /*                                 */
 PIN  21   = D2                        ; /*                                 */ 
 PIN  22   = D1                        ; /*                                 */ 
 PIN  23   = D0                        ; /*                                 */ 
-
-
 /* **** EL INTERFAZ KEMPSTON **** */
-
 Kempston = IOREQ # RD # A5 # JOY_EN; 
 D7 = 'b'0;
 D6 = 'b'0;
@@ -48,7 +43,6 @@ D3 = !Kempston & !J_Up;
 D2 = !Kempston & !J_Down;
 D1 = !Kempston & !J_Left;
 D0 = !Kempston & !J_Right;
-
 D7.OE = !Kempston;
 D6.OE = !Kempston;
 D5.OE = !Kempston;
@@ -57,9 +51,7 @@ D3.OE = !Kempston;
 D2.OE = !Kempston;
 D1.OE = !Kempston;
 D0.OE = !Kempston;
-
 /* 
 /* **** ADDRESS DECODER **** */
-
-U12A_5 = !(A0 # A1 # A2 # A5 # A7);
+U12A_5 = !A0 & !A1 & !A2 & !A5 & !A7;
 U12A_5.OE = 'b'1 ;
