@@ -5,7 +5,7 @@ UNDER LICENSE GPL Version 3
 the schematic and PCB for this interfaz, make in KICAD
 target is to have a PCB is less than 10x10cm so it's very cheap.
 
-WARING - THIS IS WORK IN PROGRESS - NOT TESTED
+WARNING - THIS IS WORK IN PROGRESS - NOT TESTED
 
 
 The Advantage of this interfaz over the original are:
