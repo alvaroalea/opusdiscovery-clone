@@ -1,10 +1,10 @@
 /* Logic Decoder for VDR's Opus Discovery Clone */
 Name     LogicGlue;
 PartNo   00 ;
-Date     09/03/2019 ;
-Revision 01 ;
+Date     04/04/2021 ;
+Revision 02 ;
 Designer Alvaro Alea ;
-Company  None ;
+Company  va-de-retro.com ;
 Assembly None ;
 Location  ;
 Device   g22v10 ;
@@ -36,7 +36,7 @@ PIN  22   = CX_K                   ; /*                                 */
 PIN  23   = CX_J                   ; /*  23                               */ 
 
 /*  */
-CX_U12B_6 = !A15 # !A14 # RFSH # !MREQ ; /* External ROM OE Ignored. */
+CX_U12B_6 = !A15 & !A14 & RFSH & !MREQ ; /* External ROM OE Ignored. */
 C1 = !A15 & !A14 & !A13 & !A11 & !A4 & A3 & U12A_5 & !MREQ & RFSH & !M1 ;
 C2 =  A8 &  A9 &  A10 &  A12 ;
 C3 = !A8 & !A9 & !A10 & !A12 ;
